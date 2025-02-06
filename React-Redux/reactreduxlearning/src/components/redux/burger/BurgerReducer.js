@@ -9,7 +9,7 @@ const initialState={
     case ORDER_BURGER:
       return {
         ...state,
-        burgerBuns: state.burgerBuns - 2,
+        burgerBuns: state.burgerBuns - action.payload,
       };
 
     default:
