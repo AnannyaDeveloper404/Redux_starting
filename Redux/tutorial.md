@@ -8,7 +8,7 @@
 - This action will then reach the store.
 - Our reducer will pick up the action and update the state according to the instruction.
 - Then it triggers a re-render of the UI where the cycle finishes.
-### REDUX VS REDUCER
+### REDUX VS useReducer
 whenever we dispatching action in useReducer, directly dispatching action in reducer.
 But in redux ,we are dispatching the action in store, where reducer will pick up the action and update based on the instruction which we have given.
 ## Middleware
@@ -21,3 +21,11 @@ But with a middleware ,we can do something with the action before that action ac
 - Crash reporting.
 - Pausing and cancelling the action
 - Perfect place for side effects
+## redux thunk with axios
+
+## redux logger middleware and redux dev tool
+
+## useSelector and useDispatch
+
+## mapPropsToState and mapPropsToDispatch and connect
+
