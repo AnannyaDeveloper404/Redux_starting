@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import orderPizza from "./redux";
+import {orderPizza} from "./redux";
 
-function HooksContainer() {
+export function HooksContainer() {
   const pizzaBase = useSelector((state) => state.pizzaBase);
   console.log(pizzaBase);
   const dispatch=useDispatch();
@@ -16,4 +16,4 @@ function HooksContainer() {
   );
 }
 
-export default HooksContainer;
+// export default HooksContainer;

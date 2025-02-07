@@ -4,7 +4,7 @@ const FETCH_ERROR = "FETCH_ERROR";
 const redux = require("redux");
 const applyMiddleware = redux.applyMiddleware;
 const thunk = require("redux-thunk").thunk;
-const axios = require("axios");
+const axios = require("./node_modules/axios/index.d.cts");
 const createStore = redux.createStore;
 //state
 const initialState = {
@@ -33,7 +33,7 @@ function fetchError() {
 
 //Reducers
 
-const reducer = (state=initialState, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_REQUEST:
       return { ...state, loading: true };
@@ -57,7 +57,7 @@ const fetchProduct = () => {
       .get("https://fakestoreapi.com/products")
       .then((res) => {
         const products = res.data.map((p) => p.title);
-        dispatch(fetchSuccess(products))
+        dispatch(fetchSuccess(products));
       })
       .catch((error) => {
         dispatch(fetchError());

@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import orderPizza  from './redux';
+import {orderPizza}  from './redux';
 
 function PizzaBox(props) {
   console.log(props);

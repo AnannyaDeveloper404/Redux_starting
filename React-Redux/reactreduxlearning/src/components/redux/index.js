@@ -1,3 +1,2 @@
-import { orderPizza } from "./pizza/PizzaActions";
-export default orderPizza;
-
+export { orderPizza } from "./pizza/PizzaActions";
+export * from "./products/ProductsActions";
